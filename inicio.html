@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <title>Inicio</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-ligth-pink: #c7c7c7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+            
+        }
+
+        body {
+            margin:0;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px); /* la funcion repeat repite las columnas el primer parametro es la cantidad de columnas el segundo es el tamaño de las columna*/
+            gap: 26px; /*da espacio entre las imagenes*/
+            place-content: center; /* permite centrar todo el contenedor principal*/
+        }
+        .product-card {
+            width: 240px;
+        }
+        .product-card img {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            border: 1px solid var(--very-ligth-pink);
+            object-fit: cover; /* esta propiedad me estira la imagen de tamaño normal */     
+        }
+        .product-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+        }
+        .product-info figure img {
+            width: 35px;
+            height: 35px; 
+            box-shadow:#dac908;
+            
+        }
+        .product-info figure {
+            margin: 0;
+        }
+        .product-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 0;
+        }
+        .product-info div p:nth-child(2) {
+            font-size: var(--sm);
+            margin: 0;
+            color: var(--very-ligth-pink);
+        }
+
+        @media (max-width: 640px) {
+            .card-container {
+            grid-template-columns: repeat(auto-fill, 140px); /* la funcion repeat repite las columnas el primer parametro es la cantidad de columnas el segundo es el tamaño de las columna*/
+            }
+            .product-card {
+                width: 140px;
+            }
+            .product-card img {
+                width: 140px;
+                height: 140px;
+                border: 1px solid var(--very-ligth-pink);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="card-container">
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+                </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                 <div>
+                    <p>$200.00</p>
+                    <p>Play 5</p>
+                 </div>   
+               <figure>
+                    <img src="./icons/bt_add_to_cart.svg" alt="">
+               </figure> 
+            </div>
+                
+            </div>
+
+            <div class="product-card">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20200612133741-1310519_640.jpg" alt="">
+                <div class="product-info">
+                    <div>
+                        <p>$200.00</p>
+                        <p>Play 5</p>
+                    </div>   
+                    <figure>
+                        <img src="./icons/bt_add_to_cart.svg" alt="">
+                    </figure> 
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
